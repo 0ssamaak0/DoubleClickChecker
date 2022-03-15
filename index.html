@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Double Click Checker</title>
+</head>
+<body>
+    <div class="contain">
+        <div class="row">
+            <div class="data col-12 col-xl-8 row">
+
+                <!-- Left Click -->
+                <div class="col-6">
+                    <div class="left">
+                        <div class="tile1">
+                            <p class="title">Left Click</p>
+                            <p class="number-l">0</p>
+                        </div>
+                    <div class="tile2">
+                        <p class="title2">Time Difference</p>
+                        <div class="double-difference-l">0s
+                        </div>  
+                    </div>
+                    <div class="tile3">
+                        <p class="title2">Double clicks</p> 
+                        <div class="DCCEL">0</div>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Right Click -->
+                <div class="col-6">
+                    <div class="right">
+                        <div class="tile1">
+                            <p class="title">Right Click</p>
+                            <p class="number-r">0</p>
+                        </div>
+                        <div class="tile2">
+                            <p class="title2">Time Difference</p>
+                            <div class="double-difference-r">
+                                0s
+                            </div>  
+                        </div>
+                        <div class="tile3">
+                            <p class="title2">Double clicks</p> 
+                            <div class="DCCER">0</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Control -->
+            <div class="main row col-12 col-xl-4 d-flex flex-column justify-content-center">
+                <!-- Clicking Area -->
+                <div class="click">
+                    <div class="click-bg d-flex flex-column justify-content-center noselect">
+                        Click me
+                    </div>
+                </div> 
+
+                <div class="btn">
+                    <button id="reset">
+                        Reset
+                    </button>
+                </div>
+            </div>        
+        </div>
+    </div>
+    
+</body>
+
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,123 @@
+/* General */
+*{
+  transition: 0.3s ease-in-out;
+  font-family: 'Work Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+.contain{
+  margin: 100px 30px;
+}
+/* Right and Left panels */
+
+div.data{
+  font-size: 2em;
+  text-align: center;
+}
+.left, .right{
+  box-shadow:  9px 9px 18px #d9d9d9,
+             -9px -9px 18px #ffffff;
+  border-radius: 15px;
+  margin: 35px 20px;
+  padding: 15px;
+  min-width: 300px;
+
+}
+
+.title{
+  font-size: 1.2em;
+  margin: 0;
+  letter-spacing: 3px;
+}
+.title2{
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.number-l, .number-r{
+  font-size: 3em;
+  background: linear-gradient(130deg, rgba(2,0,36,1) 0%, rgba(58,147,90,1) 50%, rgba(0,212,255,1) 86%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.double-difference-l, .double-difference-r{
+  font-size: 1.5em;
+  background: linear-gradient(130deg, rgba(34,143,255,1) 0%, rgba(36,10,210,1) 50%, rgba(51,69,255,1) 69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 5px
+}
+.DCCEL, .DCCER{
+  color: black;
+  font-size: 2em;
+
+}
+.DDCEL-on{
+  background: linear-gradient(130deg, rgba(255,34,34,1) 0%, rgba(210,83,10,1) 50%, rgba(255,51,51,1) 69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animations */
+.changing1{
+  transform: scale(1.05);
+  filter: brightness(1.5);
+}
+.changing2{
+  transform: scale(1.025);
+  filter: brightness(0.8);
+}
+
+
+/* Clicking Area */
+
+div.click{
+  color: white;
+  user-select: none;
+  min-height: 150px;
+  margin-bottom: 35px;
+  
+}
+div.click-bg{
+  position: relative;
+  background: #edf5f8;
+  box-shadow:  9px 9px 18px #c9d0d3,
+               -9px -9px 18px #ffffff;
+  border-radius: 15px;
+  padding: 15px;
+  height: 100%;
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 5px;
+  color: rgb(0, 0, 0);
+  transition: font-size background-color 0.3s;
+
+}
+div.click-bg:hover{
+  cursor: pointer;
+  filter: brightness(0.95);
+}
+div.click-bg:active{
+  background: rgb(127, 192, 216);
+  font-size: 2.5em;
+  letter-spacing: 7px;
+}
+
+#reset{
+  padding: 15px;
+  width: 130px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.5em;
+  background: #edf5f8;
+  box-shadow:  3px 3px 9px #c9d0d3,
+               -3px -3px 9px #ffffff;
+}
+#reset:hover{
+  filter: brightness(0.95);
+}
+#reset:active{
+  background: rgb(127, 192, 216);
+}
